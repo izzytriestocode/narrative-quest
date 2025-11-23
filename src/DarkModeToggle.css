@@ -1,0 +1,19 @@
+.dark-mode-toggle {
+  padding: 0.5rem 0.9rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--button-border);
+  background-color: var(--button-bg);
+  color: var(--text-primary);
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.dark-mode-toggle:hover {
+  background-color: var(--button-border);
+  color: white;
+}
+
+.dark-mode-toggle:active {
+  transform: scale(0.95);
+}
