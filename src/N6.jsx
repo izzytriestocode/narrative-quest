@@ -2058,7 +2058,7 @@ const BringUpTheBodies = () => {
             All blanks should be filled in with one of these words from the word bank below.
           </p>
           <div style={{ padding: "0.75rem", backgroundColor: "#fff", borderRadius: "0.5rem", border: "1px solid #d1d5db", marginBottom: "1rem" }}>
-            <strong style={{ fontSize: "0.95rem", color: "#0369a1" }}>Word bank:</strong> imagery, figurative language, reader, power, Tudor England, description
+            <strong style={{ fontSize: "1.1rem", color: "#0369a1" }}>Word bank:</strong> <span style={{ fontSize: "1rem" }}>imagery, figurative language, reader, power, Tudor England, description</span>
           </div>
           <button
             onClick={(e) => {
@@ -2347,7 +2347,7 @@ const BringUpTheBodies = () => {
 
       <div style={{ display: "flex", gap: "1rem", justifyContent: "space-between", marginTop: "2rem", marginBottom: "2rem" }}>
         <button
-          onClick={() => navigate("/")}
+          onClick={() => navigate("/n5")}
           style={{
             padding: "0.75rem 1.5rem",
             borderRadius: "0.5rem",

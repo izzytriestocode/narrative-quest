@@ -1,0 +1,82 @@
+<svg viewBox="0 0 1400 700" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1400" height="700" fill="#e0f4ff"/>
+  
+  <!-- Top time periods -->
+  <!-- May 2025 (Done) - Orange/Gold -->
+  <rect x="250" y="20" width="420" height="70" rx="5" ry="5" fill="#ffb366" stroke="black" stroke-width="2"/>
+  <text x="460" y="55" font-size="20" font-weight="bold" text-anchor="middle" dominant-baseline="central" font-family="Arial">May 2025 (Done)</text>
+  
+  <!-- Nov-Dec 2025 - Yellow -->
+  <rect x="1050" y="20" width="320" height="70" rx="5" ry="5" fill="#ffff99" stroke="black" stroke-width="3"/>
+  <text x="1210" y="55" font-size="20" font-weight="bold" text-anchor="middle" dominant-baseline="central" font-family="Arial">Nov-Dec 2025</text>
+  
+  <!-- Rounded boxes at top -->
+  <!-- Descriptive -->
+  <rect x="80" y="130" width="180" height="90" rx="20" ry="20" fill="white" stroke="black" stroke-width="3"/>
+  <text x="170" y="180" font-size="18" font-weight="bold" text-anchor="middle" dominant-baseline="central" font-family="Arial">Descriptive</text>
+  
+  <!-- STEP UP AWARD -->
+  <rect x="340" y="130" width="180" height="90" rx="20" ry="20" fill="white" stroke="black" stroke-width="3"/>
+  <text x="430" y="170" font-size="16" font-weight="bold" text-anchor="middle" dominant-baseline="central" font-family="Arial">STEP UP</text>
+  <text x="430" y="195" font-size="16" font-weight="bold" text-anchor="middle" dominant-baseline="central" font-family="Arial">AWARD</text>
+  
+  <!-- Persuasive -->
+  <rect x="600" y="130" width="180" height="90" rx="20" ry="20" fill="white" stroke="black" stroke-width="3"/>
+  <text x="690" y="180" font-size="18" font-weight="bold" text-anchor="middle" dominant-baseline="central" font-family="Arial">Persuasive</text>
+  
+  <!-- Narrative -->
+  <rect x="860" y="130" width="180" height="90" rx="20" ry="20" fill="white" stroke="black" stroke-width="3"/>
+  <text x="950" y="180" font-size="18" font-weight="bold" text-anchor="middle" dominant-baseline="central" font-family="Arial">Narrative</text>
+  
+  <!-- Exam Practice -->
+  <rect x="1120" y="130" width="180" height="90" rx="20" ry="20" fill="white" stroke="black" stroke-width="3"/>
+  <text x="1210" y="170" font-size="16" font-weight="bold" text-anchor="middle" dominant-baseline="central" font-family="Arial">Exam</text>
+  <text x="1210" y="195" font-size="16" font-weight="bold" text-anchor="middle" dominant-baseline="central" font-family="Arial">Practice</text>
+  
+  <!-- Dotted lines connecting boxes to circles -->
+  <line x1="170" y1="220" x2="170" y2="280" stroke="black" stroke-width="2" stroke-dasharray="5,5"/>
+  <line x1="430" y1="220" x2="430" y2="280" stroke="black" stroke-width="2" stroke-dasharray="5,5"/>
+  <line x1="690" y1="220" x2="690" y2="280" stroke="black" stroke-width="2" stroke-dasharray="5,5"/>
+  <line x1="950" y1="220" x2="950" y2="280" stroke="black" stroke-width="2" stroke-dasharray="5,5"/>
+  <line x1="1210" y1="220" x2="1210" y2="280" stroke="black" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- Horizontal timeline -->
+  <line x1="100" y1="330" x2="1300" y2="330" stroke="black" stroke-width="3"/>
+  
+  <!-- Circles -->
+  <!-- Circle 1 - Blue -->
+  <circle cx="170" cy="330" r="35" fill="#4a7ba7" stroke="white" stroke-width="3"/>
+  <text x="170" y="335" font-size="32" font-weight="bold" text-anchor="middle" dominant-baseline="central" fill="white" font-family="Arial">1</text>
+  
+  <!-- Circle 2 - Red -->
+  <circle cx="430" cy="330" r="35" fill="#a84a4a" stroke="white" stroke-width="3"/>
+  <text x="430" y="335" font-size="32" font-weight="bold" text-anchor="middle" dominant-baseline="central" fill="white" font-family="Arial">2</text>
+  
+  <!-- Circle 3 - Yellow -->
+  <circle cx="690" cy="330" r="35" fill="#d4a800" stroke="white" stroke-width="3"/>
+  <text x="690" y="335" font-size="32" font-weight="bold" text-anchor="middle" dominant-baseline="central" fill="white" font-family="Arial">3</text>
+  
+  <!-- Circle 4 - Green -->
+  <circle cx="950" cy="330" r="35" fill="#4a8a5a" stroke="white" stroke-width="3"/>
+  <text x="950" y="335" font-size="32" font-weight="bold" text-anchor="middle" dominant-baseline="central" fill="white" font-family="Arial">4</text>
+  
+  <!-- Circle 5 - Purple -->
+  <circle cx="1210" cy="330" r="35" fill="#6a4a8a" stroke="white" stroke-width="3"/>
+  <text x="1210" y="335" font-size="32" font-weight="bold" text-anchor="middle" dominant-baseline="central" fill="white" font-family="Arial">5</text>
+  
+  <!-- Time period boxes below circles -->
+  <!-- July 2025 (Done) - Orange/Gold -->
+  <rect x="50" y="420" width="240" height="70" rx="5" ry="5" fill="#ffb366" stroke="black" stroke-width="2"/>
+  <text x="170" y="448" font-size="16" font-weight="bold" text-anchor="middle" dominant-baseline="central" font-family="Arial">July 2025</text>
+  <text x="170" y="473" font-size="16" font-weight="bold" text-anchor="middle" dominant-baseline="central" font-family="Arial">(Done)</text>
+  
+  <!-- Sept - Oct 2025 - Orange/Gold (Autumn color) -->
+  <rect x="540" y="420" width="300" height="70" rx="5" ry="5" fill="#ffb366" stroke="black" stroke-width="2"/>
+  <text x="690" y="448" font-size="16" font-weight="bold" text-anchor="middle" dominant-baseline="central" font-family="Arial">Sept – Oct</text>
+  <text x="690" y="473" font-size="16" font-weight="bold" text-anchor="middle" dominant-baseline="central" font-family="Arial">2025</text>
+  
+  <!-- 2026 - Light Green (Summer color) -->
+  <rect x="1110" y="420" width="240" height="70" rx="5" ry="5" fill="#99ff99" stroke="black" stroke-width="2"/>
+  <text x="1230" y="455" font-size="16" font-weight="bold" text-anchor="middle" dominant-baseline="central" font-family="Arial">2026</text>
+</svg>

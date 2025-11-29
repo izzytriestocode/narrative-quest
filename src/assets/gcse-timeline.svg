@@ -1,0 +1,89 @@
+<svg viewBox="0 0 1400 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1400" height="600" fill="#e0f4ff"/>
+  
+  <!-- Rounded boxes at top -->
+  <!-- Persuasive -->
+  <rect x="80" y="40" width="200" height="100" rx="20" ry="20" fill="white" stroke="black" stroke-width="3"/>
+  <text x="180" y="95" font-size="20" font-weight="bold" text-anchor="middle" dominant-baseline="central" font-family="Arial">Persuasive</text>
+  
+  <!-- Narrative -->
+  <rect x="340" y="40" width="200" height="100" rx="20" ry="20" fill="white" stroke="black" stroke-width="3"/>
+  <text x="440" y="95" font-size="20" font-weight="bold" text-anchor="middle" dominant-baseline="central" font-family="Arial">Narrative</text>
+  
+  <!-- Descriptive -->
+  <rect x="600" y="40" width="200" height="100" rx="20" ry="20" fill="white" stroke="black" stroke-width="3"/>
+  <text x="700" y="95" font-size="20" font-weight="bold" text-anchor="middle" dominant-baseline="central" font-family="Arial">Descriptive</text>
+  
+  <!-- Reading Skills -->
+  <rect x="860" y="40" width="200" height="100" rx="20" ry="20" fill="white" stroke="black" stroke-width="3"/>
+  <text x="960" y="80" font-size="18" font-weight="bold" text-anchor="middle" dominant-baseline="central" font-family="Arial">Reading</text>
+  <text x="960" y="110" font-size="18" font-weight="bold" text-anchor="middle" dominant-baseline="central" font-family="Arial">Skills</text>
+  
+  <!-- Purpose of Texts -->
+  <rect x="1120" y="40" width="200" height="100" rx="20" ry="20" fill="white" stroke="black" stroke-width="3"/>
+  <text x="1220" y="80" font-size="18" font-weight="bold" text-anchor="middle" dominant-baseline="central" font-family="Arial">Purpose</text>
+  <text x="1220" y="110" font-size="18" font-weight="bold" text-anchor="middle" dominant-baseline="central" font-family="Arial">of Texts</text>
+  
+  <!-- Dotted lines connecting boxes to circles -->
+  <line x1="180" y1="140" x2="180" y2="200" stroke="black" stroke-width="2" stroke-dasharray="5,5"/>
+  <line x1="440" y1="140" x2="440" y2="200" stroke="black" stroke-width="2" stroke-dasharray="5,5"/>
+  <line x1="700" y1="140" x2="700" y2="200" stroke="black" stroke-width="2" stroke-dasharray="5,5"/>
+  <line x1="960" y1="140" x2="960" y2="200" stroke="black" stroke-width="2" stroke-dasharray="5,5"/>
+  <line x1="1220" y1="140" x2="1220" y2="200" stroke="black" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- Horizontal timeline -->
+  <line x1="100" y1="250" x2="1300" y2="250" stroke="black" stroke-width="3"/>
+  
+  <!-- Circles -->
+  <!-- Circle 1 - Blue -->
+  <circle cx="180" cy="250" r="35" fill="#4a7ba7" stroke="white" stroke-width="3"/>
+  <text x="180" y="255" font-size="32" font-weight="bold" text-anchor="middle" dominant-baseline="central" fill="white" font-family="Arial">1</text>
+  
+  <!-- Circle 2 - Red -->
+  <circle cx="440" cy="250" r="35" fill="#a84a4a" stroke="white" stroke-width="3"/>
+  <text x="440" y="255" font-size="32" font-weight="bold" text-anchor="middle" dominant-baseline="central" fill="white" font-family="Arial">2</text>
+  
+  <!-- Circle 3 - Yellow -->
+  <circle cx="700" cy="250" r="35" fill="#d4a800" stroke="white" stroke-width="3"/>
+  <text x="700" y="255" font-size="32" font-weight="bold" text-anchor="middle" dominant-baseline="central" fill="white" font-family="Arial">3</text>
+  
+  <!-- Circle 4 - Green -->
+  <circle cx="960" cy="250" r="35" fill="#4a8a5a" stroke="white" stroke-width="3"/>
+  <text x="960" y="255" font-size="32" font-weight="bold" text-anchor="middle" dominant-baseline="central" fill="white" font-family="Arial">4</text>
+  
+  <!-- Circle 5 - Purple -->
+  <circle cx="1220" cy="250" r="35" fill="#6a4a8a" stroke="white" stroke-width="3"/>
+  <text x="1220" y="255" font-size="32" font-weight="bold" text-anchor="middle" dominant-baseline="central" fill="white" font-family="Arial">5</text>
+  
+  <!-- Season boxes below circles -->
+  <!-- Autumn 1 - Orange/Gold -->
+  <rect x="80" y="320" width="200" height="60" rx="5" ry="5" fill="#ffb366" stroke="black" stroke-width="2"/>
+  <text x="180" y="350" font-size="16" font-weight="bold" text-anchor="middle" dominant-baseline="central" font-family="Arial">Autumn 1</text>
+  
+  <!-- Autumn 2 - Orange/Gold -->
+  <rect x="340" y="320" width="200" height="60" rx="5" ry="5" fill="#ffb366" stroke="black" stroke-width="2"/>
+  <text x="440" y="350" font-size="16" font-weight="bold" text-anchor="middle" dominant-baseline="central" font-family="Arial">Autumn 2</text>
+  
+  <!-- Spring 1 - Light Blue -->
+  <rect x="600" y="320" width="200" height="60" rx="5" ry="5" fill="#99ccff" stroke="black" stroke-width="2"/>
+  <text x="700" y="350" font-size="16" font-weight="bold" text-anchor="middle" dominant-baseline="central" font-family="Arial">Spring 1</text>
+  
+  <!-- Spring 2 - Light Blue -->
+  <rect x="860" y="320" width="200" height="60" rx="5" ry="5" fill="#99ccff" stroke="black" stroke-width="2"/>
+  <text x="960" y="350" font-size="16" font-weight="bold" text-anchor="middle" dominant-baseline="central" font-family="Arial">Spring 2</text>
+  
+  <!-- Summer 1 - Light Green -->
+  <rect x="1120" y="320" width="200" height="60" rx="5" ry="5" fill="#99ff99" stroke="black" stroke-width="2"/>
+  <text x="1220" y="350" font-size="16" font-weight="bold" text-anchor="middle" dominant-baseline="central" font-family="Arial">Summer 1</text>
+  
+  <!-- Bottom section -->
+  <!-- 6. Revision Skills & Mock Exams - Yellow -->
+  <rect x="350" y="440" width="430" height="80" rx="5" ry="5" fill="#ffff99" stroke="black" stroke-width="2"/>
+  <text x="565" y="472" font-size="16" font-weight="bold" text-anchor="middle" dominant-baseline="central" font-family="Arial">6. Revision Skills &amp;</text>
+  <text x="565" y="502" font-size="16" font-weight="bold" text-anchor="middle" dominant-baseline="central" font-family="Arial">Mock Exams</text>
+  
+  <!-- Summer 2 - Light Green -->
+  <rect x="850" y="440" width="200" height="80" rx="5" ry="5" fill="#99ff99" stroke="black" stroke-width="2"/>
+  <text x="950" y="480" font-size="16" font-weight="bold" text-anchor="middle" dominant-baseline="central" font-family="Arial">Summer 2</text>
+</svg>
