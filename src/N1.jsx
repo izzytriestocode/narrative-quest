@@ -279,6 +279,11 @@ const N1 = () => {
         </section>
       )}
 
+      {/* ZoR Check-in */}
+      {scheduleViewed && (
+        <ZoRCheck label="🧠 ZoR Check-in" onComplete={(zone) => console.log("Zone:", zone)} />
+      )}
+
       {/* GCSE Coursework Timeline */}
       {scheduleViewed && (
         <section style={{ marginBottom: "2rem", padding: "2rem", background: "#f8fafc", borderRadius: "1rem", border: "1px solid #e5e7eb" }}>

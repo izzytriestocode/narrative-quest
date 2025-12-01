@@ -48,6 +48,66 @@ const LevelSection = React.memo(({
 
 LevelSection.displayName = 'LevelSection';
 
+// ZoRCheck Component
+const ZoRCheck = ({ label = "ZoR Check-in", onComplete }) => {
+  const [zone, setZone] = useState("");
+  const [completed, setCompleted] = useState(false);
+
+  const handleSelect = (z) => {
+    setZone(z);
+    if (!completed) {
+      setCompleted(true);
+      onComplete(z);
+    }
+  };
+
+  const zones = [
+    { id: "blue", name: "🔵 Blue – tired, sad, low energy" },
+    { id: "green", name: "🟢 Green – calm, ready to learn" },
+    { id: "yellow", name: "🟡 Yellow – worried, excited, silly" },
+    { id: "red", name: "🔴 Red – angry, out of control" }
+  ];
+
+  return (
+    <section
+      style={{
+        borderRadius: "1rem",
+        padding: "1rem 1.25rem",
+        border: "1px solid #e5e7eb",
+        background: "#ecfeff",
+        marginBottom: "1rem"
+      }}
+    >
+      <h2 style={{ marginTop: 0 }}>{label}</h2>
+      <p style={{ fontSize: "1.1rem" }}>What zone are you in?</p>
+      <div
+        style={{
+          display: "grid",
+          gap: "0.5rem",
+          gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))"
+        }}
+      >
+        {zones.map((z) => (
+          <button
+            key={z.id}
+            onClick={() => handleSelect(z.name)}
+            style={{
+              padding: "0.5rem 0.75rem",
+              borderRadius: "0.75rem",
+              border: zone === z.name ? "2px solid #06b6d4" : "1px solid #bae6fd",
+              background: zone === z.name ? "#cffafe" : "#f0f9ff",
+              cursor: "pointer",
+              textAlign: "left"
+            }}
+          >
+            {z.name}
+          </button>
+        ))}
+      </div>
+    </section>
+  );
+};
+
 const N2 = () => {
   const navigate = useNavigate();
   const [xp, setXp] = useState(0);
@@ -320,6 +380,11 @@ const N2 = () => {
         </section>
       )}
 
+      {/* ZoR Check-in */}
+      {scheduleViewed && (
+        <ZoRCheck label="🧠 ZoR Check-in" onComplete={(zone) => console.log("Zone:", zone)} />
+      )}
+
       {/* Level 1 - Engage */}
       <LevelSection
         unlocked={scheduleViewed}
@@ -386,7 +451,7 @@ const N2 = () => {
         <button
           onClick={(e) => {
             e.preventDefault();
-            markComplete("levelOne", 20);
+            markComplete("levelOne", 14);
           }}
           style={{
             padding: "0.65rem 1.5rem",
@@ -404,7 +469,7 @@ const N2 = () => {
         </button>
         {completedSteps.levelOne && (
           <p style={{ marginTop: "0.75rem", color: "#16a34a", fontWeight: "bold", fontSize: "0.9rem" }}>
-            🎉 +20 XP earned!
+            🎉 +14 XP earned!
           </p>
         )}
       </LevelSection>
@@ -469,7 +534,7 @@ const N2 = () => {
           onClick={() => {
             const correctAnswer = "The man walked down the alley. He was scared.";
             if (spagAnswer.trim() === correctAnswer) {
-              markComplete("spagActivity", 15);
+              markComplete("spagActivity", 11);
             } else {
               alert("Not quite right. Try again! Hint: Check capital letters, verb tense, and punctuation.");
             }
@@ -490,7 +555,7 @@ const N2 = () => {
         </button>
         {completedSteps.spagActivity && (
           <p style={{ marginTop: "0.75rem", color: "#16a34a", fontWeight: "bold", fontSize: "0.9rem" }}>
-            🎉 +15 XP earned!
+            🎉 +11 XP earned!
           </p>
         )}
       </LevelSection>
@@ -560,7 +625,7 @@ const N2 = () => {
             );
             
             if (allCorrect) {
-              markComplete("levelTwo", 20);
+              markComplete("levelTwo", 14);
             } else {
               alert("Not all matches are correct. Try again!");
             }
@@ -581,7 +646,7 @@ const N2 = () => {
         </button>
         {completedSteps.levelTwo && (
           <p style={{ marginTop: "0.75rem", color: "#16a34a", fontWeight: "bold", fontSize: "0.9rem" }}>
-            🎉 +20 XP earned!
+            🎉 +14 XP earned!
           </p>
         )}
       </LevelSection>
@@ -842,7 +907,7 @@ const N2 = () => {
         <button
           onClick={(e) => {
             e.preventDefault();
-            markComplete("levelThree", 35);
+            markComplete("levelThree", 25);
           }}
           style={{
             padding: "0.65rem 1.5rem",
@@ -860,7 +925,7 @@ const N2 = () => {
         </button>
         {completedSteps.levelThree && (
           <p style={{ marginTop: "0.75rem", color: "#16a34a", fontWeight: "bold", fontSize: "0.9rem" }}>
-            🎉 +35 XP earned!
+            🎉 +25 XP earned!
           </p>
         )}
       </LevelSection>
@@ -963,7 +1028,7 @@ const N2 = () => {
         <button
           onClick={(e) => {
             e.preventDefault();
-            markComplete("levelFour", 25);
+            markComplete("levelFour", 18);
           }}
           style={{
             padding: "0.65rem 1.5rem",
@@ -981,7 +1046,7 @@ const N2 = () => {
         </button>
         {completedSteps.levelFour && (
           <p style={{ marginTop: "0.75rem", color: "#16a34a", fontWeight: "bold", fontSize: "0.9rem" }}>
-            🎉 +25 XP earned!
+            🎉 +18 XP earned!
           </p>
         )}
       </LevelSection>
@@ -1051,7 +1116,7 @@ const N2 = () => {
         <button
           onClick={(e) => {
             e.preventDefault();
-            markComplete("levelFive", 25);
+            markComplete("levelFive", 18);
           }}
           style={{
             padding: "0.65rem 1.5rem",
@@ -1069,7 +1134,7 @@ const N2 = () => {
         </button>
         {completedSteps.levelFive && (
           <p style={{ marginTop: "0.75rem", color: "#16a34a", fontWeight: "bold", fontSize: "0.9rem" }}>
-            🎉 +25 XP earned! Lesson Complete!
+            🎉 +18 XP earned! Lesson Complete!
           </p>
         )}
       </LevelSection>

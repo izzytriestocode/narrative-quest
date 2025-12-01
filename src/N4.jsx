@@ -1,6 +1,66 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
+// ZoRCheck Component
+const ZoRCheck = ({ label = "ZoR Check-in", onComplete }) => {
+  const [zone, setZone] = useState("");
+  const [completed, setCompleted] = useState(false);
+
+  const handleSelect = (z) => {
+    setZone(z);
+    if (!completed) {
+      setCompleted(true);
+      onComplete(z);
+    }
+  };
+
+  const zones = [
+    { id: "blue", name: "🔵 Blue – tired, sad, low energy" },
+    { id: "green", name: "🟢 Green – calm, ready to learn" },
+    { id: "yellow", name: "🟡 Yellow – worried, excited, silly" },
+    { id: "red", name: "🔴 Red – angry, out of control" }
+  ];
+
+  return (
+    <section
+      style={{
+        borderRadius: "1rem",
+        padding: "1rem 1.25rem",
+        border: "1px solid #e5e7eb",
+        background: "#ecfeff",
+        marginBottom: "1rem"
+      }}
+    >
+      <h2 style={{ marginTop: 0 }}>{label}</h2>
+      <p style={{ fontSize: "1.1rem" }}>What zone are you in?</p>
+      <div
+        style={{
+          display: "grid",
+          gap: "0.5rem",
+          gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))"
+        }}
+      >
+        {zones.map((z) => (
+          <button
+            key={z.id}
+            onClick={() => handleSelect(z.name)}
+            style={{
+              padding: "0.5rem 0.75rem",
+              borderRadius: "0.75rem",
+              border: zone === z.name ? "2px solid #06b6d4" : "1px solid #bae6fd",
+              background: zone === z.name ? "#cffafe" : "#f0f9ff",
+              cursor: "pointer",
+              textAlign: "left"
+            }}
+          >
+            {z.name}
+          </button>
+        ))}
+      </div>
+    </section>
+  );
+};
+
 const N4 = () => {
   const navigate = useNavigate();
   const [xp, setXp] = useState(0);
@@ -198,6 +258,11 @@ const N4 = () => {
             </ul>
           </div>
         </section>
+      )}
+
+      {/* ZoR Check-in */}
+      {scheduleViewed && (
+        <ZoRCheck label="🧠 ZoR Check-in" onComplete={(zone) => console.log("Zone:", zone)} />
       )}
 
       {/* Level 1 - Engage */}
