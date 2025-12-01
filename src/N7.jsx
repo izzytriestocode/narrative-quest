@@ -1981,6 +1981,21 @@ const taskBodyStyle = {
         >
           📤 Submit Lesson
         </button>
+        <button
+          onClick={() => navigate("/n8")}
+          style={{
+            padding: "0.75rem 1.5rem",
+            borderRadius: "0.5rem",
+            border: "1px solid #0369a1",
+            background: "white",
+            color: "#0369a1",
+            cursor: "pointer",
+            fontWeight: "bold",
+            fontSize: "1rem"
+          }}
+        >
+          Next Lesson →
+        </button>
       </div>
     </div>
   );
